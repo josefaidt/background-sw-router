@@ -1,0 +1,29 @@
+{
+  "name": "cheat-funny-badger",
+  "displayName": "Cheat funny badger",
+  "version": "0.0.0",
+  "description": "A basic Plasmo extension.",
+  "author": "josef",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "plasmo": "0.61.1",
+    "svelte": "3.55.0",
+    "svelte-preprocess": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.206",
+    "@types/node": "18.11.18",
+    "prettier": "2.8.1",
+    "typescript": "4.9.4",
+    "@plasmohq/prettier-plugin-sort-imports": "3.6.1"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://*/*"
+    ]
+  }
+}
