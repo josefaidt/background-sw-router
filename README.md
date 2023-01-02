@@ -1,7 +1,15 @@
 # Browser Extension Background Service Worker as a Router
 
+Make calls to your background service worker file using `slug` as a query parameter, which transforms the request to route accordingly
+
 - used [`plasmo`](https://www.plasmo.com/) to bootstrap project
 - used [`itty-router`](https://github.com/kwhitley/itty-router) for routing
+
+1. `pnpm install`
+2. `pnpm build`
+3. add the extension to Chrome
+4. navigate to `<background-sw-path>?slug=%2Fhello` (e.g. `chrome-extension://ihhpgnoehkgbhjlcgpmffcbiajlaokjk/background.5fadff2f.js?slug=%2Fhello`)
+5. observe `world` is returned
 
 ```ts
 import { Router } from "itty-router"
